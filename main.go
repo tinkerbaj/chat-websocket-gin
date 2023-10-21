@@ -3,6 +3,7 @@ package main
 import (
 	"github.com/gin-gonic/gin"
 	"github.com/tinkerbaj/chatwebsocketgin/chat"
+	"log"
 )
 
 func main() {
@@ -19,4 +20,5 @@ func main() {
 
 	})
 
+	log.Println(app.Run(":8080"))
 }
